@@ -1,11 +1,13 @@
 import './App.css';
+import React from 'react'
+import Notes from './components/Notes';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <Notes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
