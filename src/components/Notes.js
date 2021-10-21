@@ -2,14 +2,12 @@ import React from 'react'
 import Note from './Note'
 import { SimpleGrid, Container } from '@mantine/core';
 
-const Notes = () => {
+const Notes = ({ notes }) => {
     return (
         <div>
             <Container>
             <SimpleGrid cols={3}>
-            <Note />
-            <Note />
-            <Note />
+                {notes.map((note) => <Note /> )}
             </SimpleGrid>
             </Container>
         </div>
