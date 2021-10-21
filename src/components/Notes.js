@@ -7,7 +7,9 @@ const Notes = ({ notes }) => {
         <div>
             <Container>
             <SimpleGrid cols={3}>
-                {notes.map((note) => <Note /> )}
+            {notes.map((note) => ( 
+                <Note /> 
+            ))}
             </SimpleGrid>
             </Container>
         </div>
