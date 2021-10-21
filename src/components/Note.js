@@ -1,16 +1,16 @@
 import React from 'react'
 import { Paper , Text, Space } from '@mantine/core';
 
-const Note = () => {
+const Note = ({ id, title, text, date }) => {
     return (
         <div>
             <Paper padding="md" shadow="sm" radius="md">
-                <Text>Note Title</Text>
+                <Text>{title}</Text>
                 <Text>
-                    Note Text
+                    {text}
                 </Text>
                 <Text>
-                    Wed Oct 20th 2021 / delete
+                    {date} / delete
                 </Text>
             </Paper>
             <Space h="md" />

@@ -8,7 +8,7 @@ const Notes = ({ notes }) => {
             <Container>
             <SimpleGrid cols={3}>
             {notes.map((note) => ( 
-                <Note /> 
+                <Note id={note.id} title={note.title} text={note.text} date={note.date} />
             ))}
             </SimpleGrid>
             </Container>
