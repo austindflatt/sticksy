@@ -11,7 +11,7 @@ const App = () => {
   }])
   return (
     <div>
-      <Notes />
+      <Notes notes={notes} />
     </div>
   )
 }
