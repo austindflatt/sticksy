@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState } from 'react'
 import Notes from './components/Notes';
-import AddNote from './components/AddNote';
 
 const App = () => {
   const [notes, setNotes] = useState([{
@@ -10,10 +9,13 @@ const App = () => {
     text: "This is the note text",
     date: "Wed Oct 20 2021"
   }])
+
+  const addNote = (text) => {
+    console.log(text);
+  }
   return (
     <div>
-      <AddNote />
-      <Notes notes={notes} />
+      <Notes notes={notes} handleAddNote={addNote} />
     </div>
   )
 }
