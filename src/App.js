@@ -10,8 +10,16 @@ const App = () => {
     date: "Wed Oct 20 2021"
   }])
 
-  const addNote = (text) => {
-    console.log(text);
+  const addNote = (text, title) => {
+    const date = new Date();
+    const newNote = {
+      id: Math.floor(Math.random() * 100000000),
+      title: title,
+      text: text,
+      date: date.toLocaleDateString()
+    }
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
   }
   return (
     <div>

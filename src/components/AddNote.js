@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Textarea, Button, Container } from '@mantine/core';
 
-const AddNote = () => {
+const AddNote = ({ handleAddNote }) => {
+    const [noteTitle, setNoteTitle] = useState("");
     const [noteText, setNoteText] = useState("");
 
     const handleChange = (event) => {
@@ -9,7 +10,8 @@ const AddNote = () => {
 
     }
     const handleSaveClick = () => {
-        
+        handleAddNote(noteText);
+
     }
     return (
         <div>
