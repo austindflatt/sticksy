@@ -1,7 +1,7 @@
 import React from 'react'
 import { Paper , Text, Space } from '@mantine/core';
 
-const Note = ({ id, title, text, date }) => {
+const Note = ({ id, title, text, date, handleDeleteNote }) => {
     return (
         <div>
             <Paper style={{ whiteSpace: 'pre-wrap' }} padding="md" shadow="sm" radius="md">
@@ -10,7 +10,7 @@ const Note = ({ id, title, text, date }) => {
                     {text}
                 </Text>
                 <Text>
-                    {date} / delete
+                    {date} / <button onClick={() => handleDeleteNote(id)}>delete</button>
                 </Text>
             </Paper>
             <Space h="md" />
