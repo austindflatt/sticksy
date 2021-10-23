@@ -2,17 +2,16 @@ import React from 'react'
 import { TextInput, Space } from '@mantine/core';
 import { BiSearchAlt } from 'react-icons/fa';
 
-const Search = () => {
+const Search = ({ handleSearchNote }) => {
+
     return (
         <div>
             <TextInput
             placeholder="Search"
             variant="unstyled"
             size="lg"
-            rightSectionWidth={90}
-            styles={{ rightSection: { pointerEvents: 'none' } }}
+            onChange={(event) => handleSearchNote(event.target.value)}
             />
-            <Space h="md" />
         </div>
     )
 }

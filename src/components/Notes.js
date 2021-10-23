@@ -8,7 +8,6 @@ const Notes = ({ notes, handleAddNote, handleDeleteNote }) => {
     return (
         <div>
             <AddNote handleAddNote={handleAddNote} />
-            <Search />
             <SimpleGrid cols={3}>
             {notes.map((note) => ( 
                 <Note 

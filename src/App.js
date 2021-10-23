@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react'
 import Notes from './components/Notes';
 import Header from './components/Header'
+import Search from './components/Search';
 import { Container } from '@mantine/core';
 
 const App = () => {
@@ -11,6 +12,8 @@ const App = () => {
     text: "This is the note text",
     date: "Wed Oct 20 2021"
   }])
+
+  const [searchCriteria, setSearchCriteria] = useState('');
 
   const addNote = (text, title) => {
     const date = new Date();
@@ -33,8 +36,9 @@ const App = () => {
     <div>
       <Container>
       <Header />
+      <Search handleSearchNote={setSearchCriteria} />
       <Notes 
-      notes={notes} 
+      notes={notes.filter((note) => note.text.toLowerCase().includes(searchCriteria))}
       handleAddNote={addNote} 
       handleDeleteNote={deleteNote}
       />
