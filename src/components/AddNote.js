@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Textarea, Button, Container } from '@mantine/core';
+import { TextInput, Textarea, Text, Button, Space, Divider } from '@mantine/core';
 
 const AddNote = ({ handleAddNote }) => {
     const [noteTitle, setNoteTitle] = useState("");
@@ -11,17 +11,30 @@ const AddNote = ({ handleAddNote }) => {
             setNoteText(event.target.value);
         }
     }
+    const handleTitleChange = (event) => {
+        setNoteTitle(event.target.value);
+    }
     const handleSaveClick = () => {
         if (noteText.trim().length > 0) {
-            handleAddNote(noteText);
+            handleAddNote(noteText, noteTitle);
             setNoteText('');
+            setNoteTitle('');
+
         }
     }
     return (
         <div>
-            <Container>
+            <Divider />
+            <TextInput
+            placeholder="Give your note a title"
+            variant="unstyled"
+            size="xl"
+            required
+            value={noteTitle}
+            onChange={handleTitleChange}
+            />
             <Textarea
-            placeholder="Type to add a note..."
+            placeholder="Type what you want to have on your note"
             variant="unstyled"
             size="lg"
             required
@@ -29,12 +42,14 @@ const AddNote = ({ handleAddNote }) => {
             onChange={handleChange}
             />
             <>
-            <p>{characterLimit - noteText.length} remaining</p>
-            <Button variant="outline" onClick={handleSaveClick}>
-            Save note
+            <Button variant="light" color="violet" onClick={handleSaveClick}>
+            Create note
             </Button>
+            <Text style={{ float: 'right' }}>{characterLimit - noteText.length} characters left</Text>
+            <Space h="md" />
+            <Divider />
+            <Space h="md" />
             </>
-            </Container>
         </div>
     )
 }

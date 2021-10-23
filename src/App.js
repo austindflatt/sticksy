@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState } from 'react'
 import Notes from './components/Notes';
+import Header from './components/Header'
+import { Container } from '@mantine/core';
 
 const App = () => {
   const [notes, setNotes] = useState([{
@@ -29,11 +31,14 @@ const App = () => {
   }
   return (
     <div>
+      <Container>
+      <Header />
       <Notes 
       notes={notes} 
       handleAddNote={addNote} 
       handleDeleteNote={deleteNote}
       />
+      </Container>
     </div>
   )
 }

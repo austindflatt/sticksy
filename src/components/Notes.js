@@ -1,13 +1,14 @@
 import React from 'react'
 import Note from './Note'
 import AddNote from './AddNote';
+import Search from './Search';
 import { SimpleGrid, Container } from '@mantine/core';
 
 const Notes = ({ notes, handleAddNote, handleDeleteNote }) => {
     return (
         <div>
-            <Container>
             <AddNote handleAddNote={handleAddNote} />
+            <Search />
             <SimpleGrid cols={3}>
             {notes.map((note) => ( 
                 <Note 
@@ -19,7 +20,6 @@ const Notes = ({ notes, handleAddNote, handleDeleteNote }) => {
                 />
             ))}
             </SimpleGrid>
-            </Container>
         </div>
     )
 }
