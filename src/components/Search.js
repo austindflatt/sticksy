@@ -2,7 +2,7 @@ import React from 'react'
 import { TextInput, Space } from '@mantine/core';
 import { BiSearchAlt } from 'react-icons/fa';
 
-const Search = ({ handleSearchNote }) => {
+const Search = ({ handleSearchNote, notes }) => {
 
     return (
         <div>
