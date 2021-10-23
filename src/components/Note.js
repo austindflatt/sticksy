@@ -4,7 +4,7 @@ import { Paper , Text, Space } from '@mantine/core';
 const Note = ({ id, title, text, date }) => {
     return (
         <div>
-            <Paper padding="md" shadow="sm" radius="md">
+            <Paper style={{ whiteSpace: 'pre-wrap' }} padding="md" shadow="sm" radius="md">
                 <Text>{title}</Text>
                 <Text>
                     {text}
