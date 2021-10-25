@@ -15,8 +15,10 @@ Sticksy is an online sticky note taking web app.
 
 Coming Soon!
 
-## 🚀 Requirements
+## 🚀 Installation and Setup Instructions
 
 ```sh
-
+npm install
+npm start
+localhost:3000
 ```
