@@ -6,12 +6,10 @@ Sticksy is an online sticky note taking web app.
 
 ## 🛠 Tools
 
-* Python
-* Django
-* MySQL
+* React.js
+* Mantine UI
 * HTML
-* CSS & Bootstrap
-* Mapbox API
+* CSS
 
 ## ✨ Live Demo
 
