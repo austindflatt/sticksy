@@ -1,6 +1,5 @@
 import React from 'react'
-import { TextInput, Space } from '@mantine/core';
-import { BiSearchAlt } from 'react-icons/fa';
+import { TextInput } from '@mantine/core';
 
 const Search = ({ handleSearchNote, notes }) => {
 

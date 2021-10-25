@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import { TextInput, Textarea, Text, Button, Space, Divider } from '@mantine/core';
-import { useNotifications } from '@mantine/notifications';
 
 const AddNote = ({ handleAddNote }) => {
     const [noteTitle, setNoteTitle] = useState("");
     const [noteText, setNoteText] = useState("");
     const characterLimit = 200;
-
 
     const handleChange = (event) => {
         if (characterLimit - event.target.value.length >= 0) {
@@ -43,6 +41,7 @@ const AddNote = ({ handleAddNote }) => {
             value={noteText}
             onChange={handleChange}
             />
+            
             <>
             <Button variant="light" color="violet" onClick={handleSaveClick}>
             Create note

@@ -1,7 +1,6 @@
 import React from 'react'
 import Note from './Note'
 import AddNote from './AddNote';
-import Search from './Search';
 import { SimpleGrid } from '@mantine/core';
 
 const Notes = ({ notes, handleAddNote, handleDeleteNote }) => {
