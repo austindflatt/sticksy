@@ -1,6 +1,6 @@
 # 📝 Sticksy
 
-Sticksy is an online sticky note taking web app.
+Sticksy is an online note taking web app.
 
 ![notes](https://raw.githubusercontent.com/austindflatt/Sticksy/main/sticksy.png)
 
