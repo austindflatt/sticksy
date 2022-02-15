@@ -13,7 +13,7 @@ Sticksy is an online note taking web app.
 
 ## ✨ Live Demo
 
-Coming Soon!
+[https://sticksy.herokuapp.com/](https://sticksy.herokuapp.com/)
 
 ## 🚀 Installation and Setup Instructions
 
