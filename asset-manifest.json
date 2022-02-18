@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sticksy/static/css/main.0688d2fa.chunk.css",
+    "main.js": "/sticksy/static/js/main.2c991e14.chunk.js",
+    "main.js.map": "/sticksy/static/js/main.2c991e14.chunk.js.map",
+    "runtime-main.js": "/sticksy/static/js/runtime-main.ece514c2.js",
+    "runtime-main.js.map": "/sticksy/static/js/runtime-main.ece514c2.js.map",
+    "static/js/2.0e061b8c.chunk.js": "/sticksy/static/js/2.0e061b8c.chunk.js",
+    "static/js/2.0e061b8c.chunk.js.map": "/sticksy/static/js/2.0e061b8c.chunk.js.map",
+    "index.html": "/sticksy/index.html",
+    "static/css/main.0688d2fa.chunk.css.map": "/sticksy/static/css/main.0688d2fa.chunk.css.map",
+    "static/js/2.0e061b8c.chunk.js.LICENSE.txt": "/sticksy/static/js/2.0e061b8c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ece514c2.js",
+    "static/js/2.0e061b8c.chunk.js",
+    "static/css/main.0688d2fa.chunk.css",
+    "static/js/main.2c991e14.chunk.js"
+  ]
+}
