@@ -1,6 +1,7 @@
 {
   "name": "sticksy",
   "version": "0.1.0",
+  "homepage": "https://austindflatt.github.io/sticksy/",
   "private": true,
   "dependencies": {
     "@mantine/core": "^3.0.5",
@@ -16,6 +17,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
