@@ -1,12 +1,12 @@
 import React from 'react'
 import { Paper, Title, Text, Space, ActionIcon } from '@mantine/core';
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaTrashAlt, FaPen } from 'react-icons/fa';
 
 const Note = ({ id, title, text, date, handleDeleteNote }) => {
     return (
         <div>
             <Paper 
-            style={{ whiteSpace: 'pre-wrap', backgroundColor: 'rgb(18 69 162 / 45%)' }} 
+            style={{ whiteSpace: 'pre-wrap', backgroundColor: 'rgb(44 45 51 / 90%)' }} 
             padding="md" 
             shadow="sm" 
             radius="md"
@@ -21,6 +21,9 @@ const Note = ({ id, title, text, date, handleDeleteNote }) => {
                     Created on {date}
                     <ActionIcon color="red" variant="filled" style={{ float: 'right' }}>
                     <FaTrashAlt onClick={() => handleDeleteNote(id)}/>
+                    </ActionIcon>
+                    <ActionIcon color="yellow" variant="filled" style={{ float: 'right', marginRight: '10px' }}>
+                    <FaPen />
                     </ActionIcon>
                 </Text>
             </Paper>

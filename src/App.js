@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div>
       <MantineProvider theme={{ colorScheme: 'dark' }}>
-      <Container>
+      <Container size="lg">
       <Header />
       <Search handleSearchNote={setSearchCriteria} />
       <Notes 
