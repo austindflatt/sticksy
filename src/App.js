@@ -7,12 +7,7 @@ import { Container } from '@mantine/core';
 import { MantineProvider } from '@mantine/core';
 
 const App = () => {
-  const [notes, setNotes] = useState([{
-    id: Math.floor(Math.random() * 100000000),
-    title: "Note title",
-    text: "This is the note text",
-    date: "Wed Oct 20 2021"
-  }])
+  const [notes, setNotes] = useState([]);
 
   const [searchCriteria, setSearchCriteria] = useState('');
 
